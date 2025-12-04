@@ -3,42 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-            <link rel="stylesheet" href="style.css">
-
+    <title>Input Output</title>
+    <link rel ="stylesheet" href="style.css">
 </head>
 <body>
-   
-<div class="container">
-  <div class="left">
-    <div class="header">
-      <h2 class="animation a1">Welcome Back</h2>
-      <h4 class="animation a2">Log in to your account using email and password</h4>
-    </div>
-    <div class="form">
-      <input type="email" class="form-field animation a3" placeholder="Email Address">
-      <input type="password" class="form-field animation a4" placeholder="Password">
-      <form>
-
-           <p class="animation a5"><a href="#">Forgot Password</a></p>
 
 
+<script src="script.js"></script>
 
-<label for="myDropdown">Choose an option:</label>
-<select id="myDropdown" name="myDropdownName">
+
+<div class="card">
+  <div class="card__border"></div>
+  <div class="card_title__container">
+    <span class="card_title"><h2>Log In NOW!</h2></span>
+    <p class="card_paragraph"><h5> If you don't log in right now a virus will take over your computer and steal all your data!</h5>
+     
+    </p>
+    <label>Email:</label>
+<input type="email" id="email" placeholder="Enter email">
+
+<label>Password:</label>
+<input type="password" id="password" placeholder="Enter password">
+
+<label>I don't know how to change the name of these:</label>
+<select id="dropdown">
+  <option value="">Select</option>
   <option value="option1">Option 1</option>
   <option value="option2">Option 2</option>
   <option value="option3">Option 3</option>
 </select>
 
+<button onclick="showOutput()">Submit</button>
 
-      <button class="animation a6">LOGIN</button>
-    </div>
+<h3>Output:</h3>
+<div id="output"></div>
+
   </div>
-  <div class="right"></div>
-</div>
-</form>
-  <script src="js/script.js"></script>
+ 
 
 </body>
 </html>
